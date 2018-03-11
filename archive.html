@@ -10,7 +10,7 @@ title: News from London Archive
     <div class="row">
       <div class="twelve columns">
         {% for post in site.posts %}
-        <h4><a href="{{ post.url }}" title="">{{ post.title }}</a></h4>
+        <h4><a href="{{ site.baseurl }}{{ post.url }}" title="">{{ post.title }}</a></h4>
         <p>{{ post.content | truncatewords:50 }}</p>
         {% endfor %}
       </div>
